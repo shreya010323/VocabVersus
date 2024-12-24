@@ -32,3 +32,19 @@ The VocabVersus game is deployed on the **NeoX Testnet T4**. It is designed for 
 - **Stake and Play**: Engage with the game through a simple staking mechanism.  
 
 ---
+
+## Screenshots
+<img width="1440" alt="Screenshot 2024-12-25 at 1 25 30 AM" src="https://github.com/user-attachments/assets/7207f2c3-76c1-4557-9fc7-42bc219422a2" />
+<img width="1440" alt="Screenshot 2024-12-25 at 1 25 50 AM" src="https://github.com/user-attachments/assets/e81b5164-4bbb-4e8e-82be-63480e02cb75" />
+<img width="1440" alt="Screenshot 2024-12-25 at 1 21 05 AM" src="https://github.com/user-attachments/assets/d2c3a58f-fb73-436b-a94e-b9df767dd04f" />
+
+
+
+
+
+
+
+
+
+
+
