@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabVersus</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bdd1d1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #dc9342;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .stats {
+            margin-top: 6px;
+            font-size: 1.5rem;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        button {
+            background-color: #dc9342;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            margin: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #bf7a36;
+        }
+
+        input[type="text"] {
+            padding: 15px;
+            font-size: 1.2rem;
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 2px solid #dc9342;
+        }
+
+        input[type="text"]:focus {
+            border-color: #bf7a36;
+            outline: none;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            color: #dc9342;
+            margin-top: 40px;
+        }
+
+        .game-controls, .hints {
+            margin-top: 30px;
+        }
+
+        #walletStatus {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .container-fluid {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>VocabVersus</h1>
+
+    <div class="container">
+        <!-- Connect Wallet Section -->
+        <button id="connectWalletButton">Connect Wallet</button>
+        <button id="claimToken" onclick="claimTokens()">Claim 10 Coins</button>
+        <p id="walletStatus"></p>
+        
+        <!-- Stats Section -->
+        <div class="stats">
+            <div><strong>Your MemeCoin Balance:</strong> <span id="balance">Loading...</span></div>
+        </div>
+
+        <!-- Game Controls -->
+        <div class="game-controls">
+            <h3>Game Controls</h3>
+            <button id="joinButton">Join Game</button>
+            <button id="resetPlayersButton">End Game</button>
+        </div>
+
+        <!-- Make a Guess -->
+        <div class="make-guess">
+            <h3>Make a Guess</h3>
+            <input type="text" id="guessInput" placeholder="Enter your guess" />
+            <button id="guessButton">Submit Guess</button>
+        </div>
+
+        <!-- Hints Section -->
+        <div class="hints">
+            <h3>Hints</h3>
+            <button id="getHintButton">Get Hint</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
